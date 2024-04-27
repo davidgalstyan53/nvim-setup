@@ -74,26 +74,46 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   catppuccin = {
-    config = { "\27LJ\2\nÅ\2\0\0\5\0\r\0\0196\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0005\2\t\0005\3\b\0005\4\a\0=\4\3\3=\3\n\2B\0\2\0016\0\0\0009\0\v\0'\2\f\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\20color_overrides\1\0\1\20color_overrides\0\1\0\1\nmocha\0\1\0\3\vmantle\f#000000\tbase\f#000000\ncrust\f#000000\nsetup\15catppuccin\frequire\nmocha\23catppuccin_flavour\6g\bvim\0" },
+    config = { "\27LJ\2\n¶\1\0\0\3\0\n\0\0156\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0005\2\a\0B\0\2\0016\0\0\0009\0\b\0'\2\t\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\1\0\1\vborder\nwhite\nsetup\15catppuccin\frequire\nmocha\23catppuccin_flavour\6g\bvim\0" },
     loaded = true,
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   harpoon = {
     loaded = true,
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["mason-lspconfig.nvim"] = {
+  ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
-  ["mason.nvim"] = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -105,6 +125,12 @@ _G.packer_plugins = {
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -114,6 +140,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -135,7 +166,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\nÅ\2\0\0\5\0\r\0\0196\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0005\2\t\0005\3\b\0005\4\a\0=\4\3\3=\3\n\2B\0\2\0016\0\0\0009\0\v\0'\2\f\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\20color_overrides\1\0\1\20color_overrides\0\1\0\1\nmocha\0\1\0\3\vmantle\f#000000\tbase\f#000000\ncrust\f#000000\nsetup\15catppuccin\frequire\nmocha\23catppuccin_flavour\6g\bvim\0", "config", "catppuccin")
+try_loadstring("\27LJ\2\n¶\1\0\0\3\0\n\0\0156\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0005\2\a\0B\0\2\0016\0\0\0009\0\b\0'\2\t\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\1\0\1\vborder\nwhite\nsetup\15catppuccin\frequire\nmocha\23catppuccin_flavour\6g\bvim\0", "config", "catppuccin")
 time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
