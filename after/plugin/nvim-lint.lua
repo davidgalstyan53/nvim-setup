@@ -1,0 +1,24 @@
+-- require('lint').linters_by_ft = {
+--   markdown = {'vale'},
+--   python = {'pylint'},
+--   lua = {'luacheck'},
+--   go = {'golangcilint'},
+-- }
+-- 
+-- -- Optional: Define a group for your autocmd to manage them easily
+-- local group = vim.api.nvim_create_augroup('LintOnSave', { clear = true })
+-- 
+-- vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+--   group = group,
+--   callback = function()
+--     local buf_ft = vim.bo.filetype
+--     -- Check if the linter list exists for the current filetype
+--     if require('lint').linters_by_ft[buf_ft] then
+--       require("lint").try_lint()
+--     end
+-- 
+--     -- Run cspell if it's specifically needed for all filetypes
+--     require("lint").try_lint("cspell")
+--   end,
+-- })
+-- 
