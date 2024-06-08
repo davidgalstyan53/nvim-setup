@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  neogit = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/NeogitOrg/neogit"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/Users/davidgalstyan/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/nvim-pack/nvim-spectre"
   },
   ["nvim-treesitter"] = {
     loaded = true,

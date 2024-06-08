@@ -35,6 +35,11 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'NeogitOrg/neogit',
+        requires = 'nvim-lua/plenary.nvim'
+    }
+
+    use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
@@ -42,5 +47,7 @@ return require('packer').startup(function(use)
     use ("BurntSushi/ripgrep")
 
     use ("github/copilot.vim")
+
+    use ("nvim-pack/nvim-spectre")
 
 end)
